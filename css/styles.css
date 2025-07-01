@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img, video{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+  }
+  .sidebar, h1, h2, h3{
+    font-family: 'Arial', Helvetica, sans-serif;
+  }
+  
+  #hero-image{
+    margin-top: 10px;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .container {
+     display: flex;
+     flex: 1;
+  }
+  
+  .sidebar {
+     background-color: rgb(146, 146, 146);
+     width: 200px;
+     padding: 16px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+  .logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  nav ul {
+     list-style: none;
+  }
+   nav ul li {
+     margin: 20px 0;
+  }
+   nav ul li a {
+     text-decoration: none;
+     color: #222;
+     font-weight: bold;
+     font-size: 1.5em;
+     padding: 7px;
+  }
+   nav ul li a:hover {
+     color: darkgoldenrod;
+     background-color: #222;
+     border-radius: 5px;
+     transition: all 0.5s ease;
+     cursor: pointer;
+  }
+   .content {
+     flex-grow: 1;
+     background-color: white;
+     padding: 40px;
+     border-radius: 5px;
+  }
+  
+  /*footer styles*/
+   footer {
+     font-family: 'Courier New', Courier, monospace; 
+     text-align: center;
+     padding: 10px;
+     background-color: #222;
+     color: white;
+     font-weight: bold;
+     font-size: 1em;
+    }
+  /*Intro page*/
+  #intro{
+    padding: 2%;
+    text-align: left;
+  }
+  #intro p{
+    font-size: 1.25em;
+    line-height: 1.8;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  #intro blockquote{
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #222;
+    border-left: 5px solid #222;
+    border-right: 5px solid #222;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+  }
+  #intro blockquote:hover{
+    color: darkgoldenrod;
+    background-color: #222;
+  }
+  #welcome{
+    margin-bottom: 10px ;
+  }
+  /*relative links to other pages*/
+  .rel-link{
+    color: #222;
+    margin-right: 5px;
+    font-weight: bold; 
+  }
+  .rel-link a {
+    text-decoration: none;
+    color: darkgoldenrod;
+    font-weight: bold;
+  }
+  .rel-link a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  /*Biography list*/
+  #bio-list ul {
+    margin-top: 10px;
+    font-size: 1.25em;
+    padding: 5px;
+    background: linear-gradient(to right, #b8b8b8, #e6e7e7);
+    list-style: none; 
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    padding: 1% 2%;
+    line-height: 1.8;
+  }
+  #bio-list h2{
+    margin-top: 10 px;
+    text-align: center;
+    color: #222;
+  }
+  
+  /*Biography table*/
+  #bio-table table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+  #bio-table th, #bio-table td {
+    border: 1px solid #222;
+    padding: 12px;
+    text-align: center;
+  }
+  #bio-table th {
+    background-color: #222;
+    font-size: 1.25em;
+    color: darkgoldenrod;
+  }
+  #bio-table h2{
+    text-align: center;
+    margin: 20px 0 10px 0 ;
+    color: #222;
+  }
+  /*achievements page*/
+  #achievements ol{
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 1.25em;
+  }
+  #achievements ol ul{
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .achievement-img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  /*Quotes page*/
+  .page-wrapper {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;           
+    justify-content: center;          
+    align-items: center;            
+    min-height: 60vh;               
+    text-align: center;    
+    border: 2px solid #222;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0);
+  }
+  
+  .page-wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(to right, #bb4646, #963d97);
+  }
+  #quote-box {
+    padding: 20px;
+    max-width: 80%;
+  }
+  
+  #quote-box blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding: 10px 40px;
+  }
+  #quote-box button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #222;
+    color: darkgoldenrod;
+    cursor: pointer;
+    margin-top: 50px;
+    font-size: 1.25rem;
+    transition: all 0.4s ease;
+  }
+  
+  #quote-box button:hover {
+    background: #333;
+    transform: translateY(-2px);
+  }
+  
+  .author {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /*smaller viewport*/
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      font-size: 1em;
+    }
+  
+    #intro blockquote{
+      display: none;
+  }
+    .sidebar {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+    }
+  
+    nav ul li {
+      margin: 10px;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .achievement-img{
+      display: none;
+    }
+  
+  }
+  /*contact page*/
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  #contact input, #contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  #contact button {
+    background-color: #222;
+    color: darkgoldenrod;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #contact button:hover {
+    background-color: darkgoldenrod;
+    color: #222;
+  }
+  .timeline {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  /*gallery page*/
+  .gallery-grid {
+    margin-top: 50px;
+    display: column;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
