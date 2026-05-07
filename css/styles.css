@@ -31,12 +31,15 @@
   }
   
   .sidebar {
-     background-color: rgb(146, 146, 146);
+     background-color: #111;
      width: 200px;
      padding: 16px;
      display: flex;
      flex-direction: column;
      align-items: center;
+     position: sticky;
+     top: 0;
+     height: 100vh;
   }
   .logo {
     width: 150px;
@@ -50,7 +53,7 @@
   }
    nav ul li a {
      text-decoration: none;
-     color: #222;
+     color: #ffffff;
      font-weight: bold;
      font-size: 1.5em;
      padding: 7px;
@@ -242,6 +245,7 @@
     color: #666;
     margin-top: 10px;
   }
+
   
   /*smaller viewport*/
   @media (max-width: 768px) {
@@ -310,6 +314,12 @@
     margin: 20px 0;
     border-radius: 8px;
   }
+
+  #contact input:focus, #contact textarea:focus {
+     outline: none;
+     border-color: darkgoldenrod;
+     box-shadow: 0 0 0 2px rgba(184,134,11,0.3);
+   }
   
   /*gallery page*/
   .gallery-grid {
