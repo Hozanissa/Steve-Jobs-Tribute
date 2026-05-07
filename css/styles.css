@@ -223,6 +223,12 @@
     position: relative;
     padding: 10px 40px;
   }
+  #quote-box blockquote {
+  min-height: 120px; /* adjust to fit your longest quote */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   #quote-box button {
     padding: 12px 20px;
     border: none;
