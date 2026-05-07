@@ -17,3 +17,12 @@ const quotes = [
       window.open(img.src, '_blank');
     });
   });
+
+  const form = document.querySelector('#contact form');
+if (form) {
+  form.addEventListener('submit', () => {
+    setTimeout(() => {
+      form.innerHTML = '<p style="text-align:center; font-size:1.2em;">✅ Thanks! Your message was sent.</p>';
+    }, 500);
+  });
+}
